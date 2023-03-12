@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem 12vw;
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo {
+      background: url("/assets/images/logo.svg") no-repeat;
+      width: 39px;
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+
+      margin-right: 5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    #active {
+      color: #06F47C;
+    }
+  }
+}
+
+main {
+
+  #home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 4rem 12vw;
+
+    .title {
+      h1 {
+        color: #ffffff;
+        font-size: 2rem;
+        margin: 8px 0 10px 0;
+      }
+
+      b {
+        background: linear-gradient(-90deg,
+                #06f47c 0.00%,
+                #3cdeb2 100.00%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff;
+      }
+    }
+  }
+}
