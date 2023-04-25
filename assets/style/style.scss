@@ -1,7 +1,21 @@
+@import url(https://fonts.bunny.net/css?family=open-sans:400,700);
+
 body {
   margin: 0;
   background: #101010;
   font-family: "open sans", sans-serif;
+}
+
+header, main {
+  margin: 0 12vw;
+
+  @media (max-width: 1150px) {
+    margin: 0 2rem;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 1rem;
+  }
 }
 
 button {
@@ -13,6 +27,35 @@ button {
   cursor: pointer;
 
   color: #ffffff;
+  font-family: "open sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+}
+
+b {
+  background: linear-gradient(-90deg,
+          #06f47c 0.00%,
+          #3cdeb2 100.00%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .logo {
+    background: url("/assets/images/logo.svg") no-repeat;
+    width: 39px;
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
 }
