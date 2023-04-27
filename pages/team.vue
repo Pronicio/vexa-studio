@@ -1,11 +1,11 @@
 <template>
     <main>
-        <div class="title">
+        <div class="title reveal fade-left">
             <h1>Notre <b>super équipe</b></h1>
             <p>Vexa Studio possède une équipe dévouée, sérieuse<br>
                 et profesionnelle qui a pour but votre satisfaction.</p>
         </div>
-        <section>
+        <section class="reveal fade-left">
             <h3>Pôle Gestion</h3>
             <div class="collection">
                 <div class="card">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="reveal fade-left">
             <h3>Pôle Artistique</h3>
             <div class="collection">
                 <div class="card">
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="reveal fade-left">
             <h3>Pôle Clientèle</h3>
             <div class="collection">
                 <div class="card">
