@@ -59,3 +59,17 @@ b {
     color: #ffffff;
   }
 }
+
+::-webkit-scrollbar {
+  height: 3px;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06f47c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
