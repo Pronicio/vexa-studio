@@ -31,6 +31,7 @@ main {
     }
 
     img {
+      -webkit-filter: drop-shadow(6px 23px 60px rgb(6 244 124 / 50%));
 
       @media (max-width: 810px) {
         display: none;
