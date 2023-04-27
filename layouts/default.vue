@@ -5,9 +5,9 @@
             <h3>Vexa Studio</h3>
         </div>
         <nav>
-            <NuxtLink to="/" id="active">Accueil</NuxtLink>
-            <NuxtLink to="/team">Équipe</NuxtLink>
-            <NuxtLink to="/services">Services</NuxtLink>
+            <NuxtLink to="/" :id="path === '/' ? 'active' : ''">Accueil</NuxtLink>
+            <NuxtLink to="/team" :id="path === '/team' ? 'active' : ''">Équipe</NuxtLink>
+            <NuxtLink to="/services" :id="path === '/services' ? 'active' : ''">Services</NuxtLink>
             <button>Contact</button>
         </nav>
     </header>
@@ -47,10 +47,12 @@
 @import "assets/style/layouts/default.scss";
 </style>
 
-<script setup>
-import { onMounted, onBeforeMount } from 'vue'
+<script setup lang="ts">
+import {onMounted, onUpdated, nextTick} from 'vue';
 
-function reveal() {
+const path = ref();
+
+function reveal(): void {
     let reveals = document.querySelectorAll(".reveal");
 
     for (let i = 0; i < reveals.length; i++) {
@@ -69,5 +71,14 @@ function reveal() {
 onMounted(() => {
     reveal()
     window.addEventListener("scroll", reveal);
+    path.value = window.location.pathname;
+    console.log("onMounted", path);
+})
+
+onUpdated(async () => {
+    reveal()
+    await nextTick()
+    path.value = window.location.pathname;
+    console.log("onUpdated", path);
 })
 </script>
