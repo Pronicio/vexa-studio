@@ -4,13 +4,20 @@
             <div class="logo"></div>
             <h3>Vexa Studio</h3>
         </div>
+        <button class="mobile_menu_btn" @click="toggleMobileMenu"></button>
         <nav>
-            <NuxtLink to="/" :id="path === '/' ? 'active' : ''">Accueil</NuxtLink>
-            <NuxtLink to="/team" :id="path === '/team' ? 'active' : ''">Équipe</NuxtLink>
-            <NuxtLink to="/services" :id="path === '/services' ? 'active' : ''">Services</NuxtLink>
+            <NuxtLink to="/">Accueil</NuxtLink>
+            <NuxtLink to="/team">Équipe</NuxtLink>
+            <NuxtLink to="/services">Services</NuxtLink>
             <button>Contact</button>
         </nav>
     </header>
+    <div id="mobile_menu">
+        <NuxtLink to="/">Accueil</NuxtLink>
+        <NuxtLink to="/team">Équipe</NuxtLink>
+        <NuxtLink to="/services">Services</NuxtLink>
+        <button>Contact</button>
+    </div>
     <slot/>
     <footer>
         <div class="column">
@@ -72,13 +79,16 @@ onMounted(() => {
     reveal()
     window.addEventListener("scroll", reveal);
     path.value = window.location.pathname;
-    console.log("onMounted", path);
 })
 
 onUpdated(async () => {
     reveal()
     await nextTick()
     path.value = window.location.pathname;
-    console.log("onUpdated", path);
 })
+
+function toggleMobileMenu(): void {
+    const state = document.getElementById("mobile_menu") as HTMLElement;
+    state.classList.toggle("open");
+}
 </script>
