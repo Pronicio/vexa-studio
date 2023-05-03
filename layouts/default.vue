@@ -9,14 +9,14 @@
             <NuxtLink to="/">Accueil</NuxtLink>
             <NuxtLink to="/team">Équipe</NuxtLink>
             <NuxtLink to="/services">Services</NuxtLink>
-            <button>Contact</button>
+            <button><NuxtLink to="/contact">Contact</NuxtLink></button>
         </nav>
     </header>
     <div id="mobile_menu">
         <NuxtLink to="/">Accueil</NuxtLink>
         <NuxtLink to="/team">Équipe</NuxtLink>
         <NuxtLink to="/services">Services</NuxtLink>
-        <button>Contact</button>
+        <button><NuxtLink to="/contact">Contact</NuxtLink></button>
     </div>
     <slot/>
     <footer>
