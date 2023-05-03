@@ -43,6 +43,7 @@
                     </p>
                 </div>
             </div>
+            <button class="reveal fade-left">Commander maintenant</button>
         </section>
         <section id="reviews">
             <div class="title reveal fade-left">
