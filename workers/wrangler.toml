@@ -1,0 +1,3 @@
+name = "vexa-workers"
+main = "./src/index.js"
+compatibility_date = "2023-05-04"
