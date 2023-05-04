@@ -42,7 +42,7 @@ export async function postWebhook(body) {
 export function testData(reqBody) {
     if (
         reqBody.username &&
-        reqBody.subname &&
+        reqBody.surname &&
         reqBody.email &&
         reqBody.object &&
         reqBody.message

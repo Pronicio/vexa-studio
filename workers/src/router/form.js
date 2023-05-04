@@ -1,4 +1,5 @@
 import { postWebhook, readRequestBody, testData } from '../utils.js'
+import { corsHeaders } from "../index.js";
 
 /**
  * @param {Request} request
@@ -23,7 +24,7 @@ export default async function (request) {
         },
         embeds: [ {
             author: {
-                name: `${reqBody.username} ${reqBody.subname}`,
+                name: `${reqBody.username} ${reqBody.surname}`,
                 url: `https://www.google.com/search?q=${reqBody.username}`,
                 icon_url: userAvatar,
             },
@@ -41,5 +42,12 @@ export default async function (request) {
     const webhook = await postWebhook(body)
     if (!webhook) new Response("Error on webhook", { status: 500 });
 
-    return new Response("Success !");
+    return new Response("Success !", {
+        headers: {
+            ...corsHeaders,
+            "Access-Control-Allow-Headers": request.headers.get(
+                "Access-Control-Request-Headers"
+            ),
+        },
+    })
 }

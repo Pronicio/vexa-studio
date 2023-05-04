@@ -1,5 +1,11 @@
 import form from './router/form.js'
 
+export const corsHeaders = {
+	"Access-Control-Allow-Origin": "*",
+	"Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
+	"Access-Control-Max-Age": "86400",
+};
+
 export default {
 	/**
 	 * @param {Request} req
@@ -8,6 +14,10 @@ export default {
 	async fetch(req) {
 		let url = new URL(req.url);
 		let path = url.pathname.replace(/[/]$/, '');
+
+		if (req.method === "OPTIONS") {
+			return handleOptions(req);
+		}
 
 		switch (path) {
 			case '/form': {
@@ -19,3 +29,26 @@ export default {
 		}
 	},
 };
+
+function handleOptions(req) {
+	if (
+		req.headers.get("Origin") !== null &&
+		req.headers.get("Access-Control-Request-Method") !== null &&
+		req.headers.get("Access-Control-Request-Headers") !== null
+	) {
+		return new Response(null, {
+			headers: {
+				...corsHeaders,
+				"Access-Control-Allow-Headers": req.headers.get(
+					"Access-Control-Request-Headers"
+				),
+			},
+		});
+	} else {
+		return new Response(null, {
+			headers: {
+				Allow: "GET, HEAD, POST, OPTIONS",
+			},
+		});
+	}
+}
