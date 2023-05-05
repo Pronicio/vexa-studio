@@ -14,7 +14,7 @@ export default async function (request) {
     const good = testData(reqBody);
     if (!good) return new Response("Invalid Data", { status: 500 });
 
-    const userAvatar = `https://api.dicebear.com/6.x/micah/png?seed=${reqBody.username}`
+    const userAvatar = `https://api.dicebear.com/6.x/micah/png?seed=${reqBody.username.replace(/ /, '')}`
 
     const body = {
         name: reqBody.username,
@@ -25,7 +25,7 @@ export default async function (request) {
         embeds: [ {
             author: {
                 name: `${reqBody.username} ${reqBody.surname}`,
-                url: `https://www.google.com/search?q=${reqBody.username}`,
+                url: `https://www.google.com/search?q=${reqBody.username.replace(/ /, '')}`,
                 icon_url: userAvatar,
             },
             description: `**Objet** : ${reqBody.object} \n **Message :** ${reqBody.message}`,
@@ -40,14 +40,12 @@ export default async function (request) {
     }
 
     const webhook = await postWebhook(body)
-    if (!webhook) new Response("Error on webhook", { status: 500 });
+    if (!webhook) return new Response("Error on webhook", { status: 500 });
 
-    return new Response("Success !", {
-        headers: {
-            ...corsHeaders,
-            "Access-Control-Allow-Headers": request.headers.get(
-                "Access-Control-Request-Headers"
-            ),
-        },
-    })
+    const res = new Response("Success !");
+    for (const header in corsHeaders) {
+        res.headers.set(header, corsHeaders[header])
+    }
+
+    return res
 }

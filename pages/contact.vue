@@ -51,7 +51,7 @@ const message = ref();
 
 function sendMessage() {
     let formData = new FormData();
-    formData.append('name', name.value);
+    formData.append('username', name.value);
     formData.append('surname', surname.value);
     formData.append('email', email.value);
     formData.append('object', object.value);

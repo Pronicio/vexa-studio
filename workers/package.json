@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"deploy": "wrangler publish src/index.js",
-		"dev": "wrangler dev src/index.js --local"
+		"workers/dev": "wrangler dev src/index.js --local"
 	},
 	"devDependencies": {
 		"miniflare": "^2.13.0",

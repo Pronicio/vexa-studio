@@ -32,8 +32,8 @@ export async function postWebhook(body) {
     };
 
     try {
-        const response = await fetch(WEBHOOK, init);
-        return response.status === 200;
+        await fetch(WEBHOOK, init);
+        return true
     } catch (error) {
         return false
     }
