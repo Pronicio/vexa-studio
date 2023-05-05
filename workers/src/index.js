@@ -1,7 +1,7 @@
 import form from './router/form.js'
 
 export const corsHeaders = {
-	"Access-Control-Allow-Origin": "*",
+	"Access-Control-Allow-Origin": "https://vexa-studio.vercel.app",
 	"Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
 	"Access-Control-Max-Age": "86400",
 };

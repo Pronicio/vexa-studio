@@ -24,11 +24,11 @@ export default async function (request) {
         },
         embeds: [ {
             author: {
-                name: `${reqBody.username} ${reqBody.surname}`,
+                name: `${reqBody.username} - ${reqBody.surname}`,
                 url: `https://www.google.com/search?q=${reqBody.username.replace(/ /, '')}`,
                 icon_url: userAvatar,
             },
-            description: `**Objet** : ${reqBody.object} \n **Message :** ${reqBody.message}`,
+            description: `**Objet** : ${reqBody.object} \n**Message :** ${reqBody.message}`,
             fields: [
                 {
                     name: ':e_mail: Email :',
