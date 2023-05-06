@@ -26,8 +26,7 @@
             </div>
             <div class="form-item message">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" cols="33" required v-model="message"></textarea>
-
+                <textarea id="message" name="message" rows="5" cols="33" maxlength="4096" required v-model="message"></textarea>
             </div>
             <div class="form-item submit">
                 <button type="submit">Soumettre</button>

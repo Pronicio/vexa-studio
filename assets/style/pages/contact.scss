@@ -59,6 +59,7 @@ main {
         height: 2rem;
         color: #ffffff;
         max-width: 30rem;
+        font-family: "open sans", sans-serif;
 
         animation: fade-right 1s ease-in;
 
@@ -71,6 +72,7 @@ main {
         min-height: 35vh;
         height: auto;
         resize: none;
+        cursor: auto;
       }
 
       button {
