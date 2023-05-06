@@ -1,22 +1,28 @@
 <template>
     <header>
-        <div class="brand">
-            <div class="logo"></div>
-            <h3>Vexa Studio</h3>
-        </div>
+        <NuxtLink to="/">
+            <div class="brand">
+                <div class="logo"></div>
+                <h3>Vexa Studio</h3>
+            </div>
+        </NuxtLink>
         <button class="mobile_menu_btn" @click="toggleMobileMenu"></button>
         <nav>
             <NuxtLink to="/">Accueil</NuxtLink>
             <NuxtLink to="/team">Équipe</NuxtLink>
             <NuxtLink to="/services">Services</NuxtLink>
-            <button><NuxtLink to="/contact">Contact</NuxtLink></button>
+            <button>
+                <NuxtLink to="/contact">Contact</NuxtLink>
+            </button>
         </nav>
     </header>
     <div id="mobile_menu">
         <NuxtLink to="/">Accueil</NuxtLink>
         <NuxtLink to="/team">Équipe</NuxtLink>
         <NuxtLink to="/services">Services</NuxtLink>
-        <button><NuxtLink to="/contact">Contact</NuxtLink></button>
+        <button>
+            <NuxtLink to="/contact">Contact</NuxtLink>
+        </button>
     </div>
     <slot/>
     <footer>
@@ -55,7 +61,7 @@
 </style>
 
 <script setup lang="ts">
-import {onMounted, onUpdated, nextTick} from 'vue';
+import { onMounted, onUpdated, nextTick } from 'vue';
 
 const path = ref();
 
@@ -67,8 +73,11 @@ function reveal(): void {
         const elementTop = reveals[i].getBoundingClientRect().top;
         const elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible) {
+        if (elementTop < windowHeight - elementVisible && !reveals[i].classList.contains("no-animation")) {
             reveals[i].classList.add("active");
+            setTimeout(() => {
+                reveals[i].classList.add("no-animation");
+            }, 1000);
         } else {
             reveals[i].classList.remove("active");
         }

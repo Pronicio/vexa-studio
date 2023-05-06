@@ -37,6 +37,14 @@ header {
       &:last-child {
         margin-right: 0;
       }
+
+      &:hover {
+        color: #06f47c;
+      }
+    }
+
+    button a {
+      color: #FFFFFF !important;
     }
 
     @media (max-width: 610px) {

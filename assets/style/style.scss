@@ -1,5 +1,9 @@
 @import url(https://fonts.bunny.net/css?family=open-sans:400,600,700);
 
+* {
+  transition: .3s;
+}
+
 body {
   margin: 0;
   background: #101010;
@@ -16,6 +20,10 @@ header, main {
   @media (max-width: 500px) {
     margin: 0 1rem;
   }
+
+  a {
+    text-decoration: none !important;
+  }
 }
 
 button {
@@ -30,6 +38,12 @@ button {
   font-family: "open sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+
+  transition: .3s;
+
+  &:hover {
+    border: #008140 2px solid;
+  }
 }
 
 b {
@@ -76,6 +90,7 @@ b {
 
 .router-link-active {
   color: #06f47c !important;
+  font-weight: bold !important;
 }
 
 .reveal {
@@ -93,6 +108,15 @@ b {
       animation: fade-right 1s ease-in;
     }
   }
+}
+
+.no-animation {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+
+  opacity: 1 !important;
 }
 
 @keyframes fade-left {
