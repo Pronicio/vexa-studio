@@ -26,13 +26,25 @@
             </div>
             <div class="form-item message">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" cols="33" maxlength="4096" required v-model="message"></textarea>
+                <textarea id="message" name="message" rows="5" cols="33" maxlength="4096" required
+                          v-model="message"></textarea>
             </div>
             <div class="form-item submit">
                 <button type="submit">Soumettre</button>
             </div>
         </form>
     </main>
+    <div class="toast">
+        <div class="toast-content">
+            <i class="check"></i>
+            <div class="message">
+                <span class="text text-1">Succès !</span>
+                <span class="text text-2">Votre message a bien été envoyé.</span>
+            </div>
+        </div>
+        <i class="close" @click="closeToast"></i>
+        <div class="progress active"></div>
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -48,7 +60,9 @@ const email = ref();
 const object = ref();
 const message = ref();
 
-function sendMessage() {
+let timer1, timer2;
+
+async function sendMessage() {
     let formData = new FormData();
     formData.append('username', name.value);
     formData.append('surname', surname.value);
@@ -56,10 +70,63 @@ function sendMessage() {
     formData.append('object', object.value);
     formData.append('message', message.value);
 
-    fetch(`${runtimeConfig.workersURL}/form`, {
-        body: formData,
-        mode: 'cors',
-        method: "POST"
-    });
+    try {
+        const res = await fetch(`${runtimeConfig.workersURL}/form`, {
+            body: formData,
+            mode: 'cors',
+            method: "POST"
+        })
+
+        const result = await res.text();
+
+        if (result === "Success !") {
+            toast(true)
+        } else {
+            toast(false)
+        }
+    } catch (e) {
+        toast(false)
+        console.log(e)
+    }
+}
+
+function toast(success) {
+    const toast = document.querySelector(".toast");
+    const progress = document.querySelector(".progress");
+
+    if (!success) {
+        toast.classList.add("error");
+        document.querySelector(".text-1").innerText = "Erreur !"
+        document.querySelector(".text-2").innerText = "Veuillez vérifier que le formulaire est\n correctement rempli."
+    } else if (toast.classList.contains('error')) {
+        toast.classList.remove("error");
+        document.querySelector(".text-1").innerText = "Succès !"
+        document.querySelector(".text-2").innerText = "Votre message a bien été envoyé."
+    }
+
+    toast.classList.add("active");
+    progress.classList.add("active");
+
+    timer1 = setTimeout(() => {
+        toast.classList.remove("active");
+    }, 5000);
+
+    timer2 = setTimeout(() => {
+        progress.classList.remove("active");
+    }, 5300);
+}
+
+function closeToast() {
+    const toast = document.querySelector(".toast");
+    const progress = document.querySelector(".progress");
+
+    toast.classList.remove("active");
+
+    setTimeout(() => {
+        progress.classList.remove("active");
+    }, 300);
+
+    clearTimeout(timer1);
+    clearTimeout(timer2);
 }
 </script>
