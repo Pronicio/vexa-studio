@@ -31,19 +31,20 @@ button {
   border: #06f47c 2px solid;
   border-radius: 10px;
 
-  padding: 8px 10px;
-  background: #101010;
+  padding: 8px 20px;
+  background: #06f47c;
   cursor: pointer;
 
-  color: #ffffff;
+  color: #101010;
   font-family: "open sans", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 
   transition: .3s;
 
   &:hover {
-    border: #008140 2px solid;
+    background: #01964c;
+    border: #01964c 2px solid;
   }
 }
 

@@ -33,7 +33,7 @@
             </div>
             <p>
                 Vexa Studio est un studio de conception<br>
-                graphique visant à créer et développer<br>
+                web & graphique visant à créer et développer<br>
                 l'image visuelle projetée par nos clients<br>
                 partout sur le web.
             </p>
@@ -46,9 +46,9 @@
         </div>
         <div class="column">
             <h5>Réseaux Sociaux</h5>
-            <a href="#">Discord</a>
-            <a href="#">Twitter</a>
-            <a href="#">Behance</a>
+            <a href="https://discord.vexastudio.com">Discord</a>
+            <a href="https://twitter.com/vexastudio">Twitter</a>
+            <a href="https://behance.net/vexastudio">Behance</a>
         </div>
     </footer>
     <div class="copyright">

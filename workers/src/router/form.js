@@ -25,18 +25,20 @@ export default async function (request) {
         embeds: [ {
             color: 455804,
             author: {
-                name: `${reqBody.username} - ${reqBody.surname}`,
-                url: `https://www.google.com/search?q=${reqBody.username.replace(/ /, '')}`,
+                name: `${reqBody.username} ${reqBody.surname}`,
+                url: `https://vexastudio.com`,
                 icon_url: userAvatar,
             },
-            description: `**Objet** : ${reqBody.object} \n**Message :** ${reqBody.message}`,
+            title: `Nouveau Message`,
+            description: `<:info:1059983684855414784>・Objet : ${reqBody.object} \n<:text:1064002116986867772>・Message : ${reqBody.message}`,
             fields: [
                 {
-                    name: ':e_mail: Email :',
+                    name: '<:contact:1059131491646459985>・Email :',
                     value: reqBody.email,
                 }
             ],
-            timestamp: new Date().toISOString()
+            timestamp: new Date().toISOString(),
+            footer: `©️ Vexa Studio 2023. - Tous droits réservés.`
         } ],
     }
 

@@ -2,13 +2,13 @@
     <main>
         <section id="home">
             <div class="title reveal fade-left">
-                <button>Fièrement québécois!</button>
+                <button>10% de rabais avec WEBSITE10</button>
                 <h1>Nous Concevons Votre<br><b>Indentité Graphique</b></h1>
-                <p>Vexa Studio est un studio de conception graphique<br>
+                <p>Vexa Studio est un studio de conception web graphique<br>
                     visant à créer et développer l'image visuelle projetée par nos<br>
                     clients partout sur le web.</p>
             </div>
-            <img src="../assets/images/palette.png" alt="Palette" class="reveal fade-right">
+            <img src="../assets/images/palette.png" draggable="false" alt="Palette" class="reveal fade-right">
         </section>
         <section id="why">
             <div class="title reveal fade-left">
@@ -19,7 +19,7 @@
             </div>
             <div class="collection reveal fade-right">
                 <div class="card">
-                    <img src="../assets/images/graphics/discord.png" alt="Discord">
+                    <img src="../assets/images/graphics/discord.png" alt="Discord" draggable="false">
                     <h4>Commande via Discord</h4>
                     <p>Grâce à notre bot, il est possible de<br>
                         commander à l'aide d'un procédé<br>
@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div class="card">
-                    <img src="../assets/images/graphics/money.png" alt="Money">
+                    <img src="../assets/images/graphics/money.png" alt="Money" draggable="false">
                     <h4>Prix peu coûteux</h4>
                     <p>Nous rendons le prix des commandes<br>
                         le plus bas possible pour vous permettre<br>
@@ -35,7 +35,7 @@
                     </p>
                 </div>
                 <div class="card">
-                    <img src="../assets/images/graphics/file.png" alt="File">
+                    <img src="../assets/images/graphics/file.png" alt="File" draggable="false">
                     <h4>Accès aux fichiers finaux</h4>
                     <p>Nous vous donnons l'accès aux fichiers<br>
                         une fois le projet approuvé pour vous<br>
@@ -47,34 +47,35 @@
         </section>
         <section id="reviews">
             <div class="title reveal fade-left">
-                <h2>Nous <b>sommes idéals</b></h2>
-                <p>Voici pourquoi nous sommes un bon choix pour la<br>
-                    création de vos différents contenus graphiques.
+                <h2>Nos clients <b>sont satisfaits</b></h2>
+                <p>Notre priorité est votre satisfaction, et ce, en tout temps.<br>
+                    Maintenant, laissons nos clients en témoigner.
                 </p>
             </div>
             <div class="collection reveal fade-right">
                 <div class="review">
-                    <img src="../assets/images/user-avatar.png" alt="User avatar" width="60">
-                    <h5>Lorem Ipsum</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur<br>
-                        adipiscing elit, sed do eiusmod tempor<br>
-                        incididunt ut labore et dolore magna aliqua.<br>
+                    <img src="../assets/images/user-avatar.png" draggable="false" alt="User avatar" width="60">
+                    <h5>Russay</h5>
+                    <p>« Reçu en temps et en heure, design<br>
+                        incroyable et résultat surprenant!<br>
+                        Je souhaite de tout coeur continuer<br>
+                        de faire affaire avec Vexa Studio! »
                     </p>
                 </div>
                 <div class="review">
-                    <img src="../assets/images/user-avatar.png" alt="User avatar" width="60">
-                    <h5>Lorem Ipsum</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur<br>
-                        adipiscing elit, sed do eiusmod tempor<br>
-                        incididunt ut labore et dolore magna aliqua.<br>
+                    <img src="../assets/images/user-avatar.png" draggable="false" alt="User avatar" width="60">
+                    <h5>Belzerk</h5>
+                    <p>« Logo e-sport incroyable fait par Vexa Studio,<br>
+                        rapide, super sympa et arrangeant au niveau<br>
+                        du prix selon le budget. Je recommande! »<br>
                     </p>
                 </div>
                 <div class="review">
-                    <img src="../assets/images/user-avatar.png" alt="User avatar" width="60">
-                    <h5>Lorem Ipsum</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur<br>
-                        adipiscing elit, sed do eiusmod tempor<br>
-                        incididunt ut labore et dolore magna aliqua.<br>
+                    <img src="../assets/images/user-avatar.png" draggable="false" alt="User avatar" width="60">
+                    <h5>Elroc</h5>
+                    <p>« Charte graphique faite par Vexa Studio,<br>
+                        travail super propre et rapide, je ne peux<br>
+                        que recommander vivement à tous! »<br>
                     </p>
                 </div>
             </div>
@@ -114,15 +115,16 @@
         <section id="creations">
             <div class="title reveal fade-left">
                 <h2>Nos <b>dernières créations</b></h2>
-                <p>Voici les dernières commandes que nous avons<br>
-                    effectuées pour nos clients.
+                <p>Nos créations sont uniques et de qualité. Voyez ci-dessous<br>
+                   ce que nous avons conçu récemment pour nos clients.
                 </p>
+                <button onclick="window.location.href='https://behance.net/vexastudio';">Notre portfolio</button>
             </div>
-            <div class="collection reveal fade-right">
+            <!-- <div class="collection reveal fade-right">
                 <div class="card">
                     <img src="../assets/images/us/banner_tom.png" alt="Tom's banner" width="509">
                 </div>
-            </div>
+            </div> -->
         </section>
     </main>
 </template>

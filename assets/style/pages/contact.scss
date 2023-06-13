@@ -44,27 +44,26 @@ main {
       height: 5rem;
 
       label {
-        font-weight: 700;
-        font-size: 1.25rem;
+        font-weight: 600;
+        font-size: 1.2rem;
         color: #FFFFFF;
-        margin-bottom: 8px;
-
-        animation: fade-left 1s ease-in;
+        margin-bottom: 4px;
       }
 
       input, textarea {
         background: #1A1D21;
-        border: 2px solid #00FF7E;
-        border-radius: 10px;
+        border: 2px solid #727773;
+        border-radius: 6px;
         height: 2rem;
         color: #ffffff;
         max-width: 30rem;
-        font-family: "open sans", sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
 
-        animation: fade-right 1s ease-in;
 
         &:focus-visible {
-          outline: #00FF7E 1px solid;
+          outline: #00FF7E 2px solid;
         }
       }
 
@@ -92,7 +91,7 @@ main {
   top: 25px;
   right: 30px;
   border-radius: 12px;
-  background: #fff;
+  background: #06f47c;
   padding: 20px 35px 20px 25px;
   box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
   overflow: hidden;

@@ -6,20 +6,20 @@
                 et profesionnelle qui a pour but votre satisfaction.</p>
         </div>
         <section>
-            <h3 class="reveal fade-left">Pôle Gestion</h3>
+            <h3 class="reveal fade-left">Pôle Direction</h3>
             <div class="collection reveal fade-right">
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/artix.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Artix</h4>
-                        <p>Lorem Ipsum</p>
+                        <p>Directeur</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/tom.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Tom</h4>
-                        <p>Lorem Ipsum</p>
+                        <p>Directeur Adjoint</p>
                     </div>
                 </div>
             </div>
@@ -28,59 +28,59 @@
             <h3 class="reveal fade-left">Pôle Artistique</h3>
             <div class="collection reveal fade-right">
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/alex.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Alex</h4>
-                        <p>Lorem Ipsum</p>
+                        <p>Graphiste</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/superangers.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Superangers</h4>
-                        <p>Lorem Ipsum</p>
+                        <h4>Superanger</h4>
+                        <p>Modeleur 3D</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/pronicio.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Pronicio</h4>
-                        <p>Lorem Ipsum</p>
+                        <p>Développeur</p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h3 class="reveal fade-left">Pôle Clientèle</h3>
+            <h3 class="reveal fade-left">Pôle Service Client</h3>
             <div class="collection reveal fade-right">
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/luciferdawns.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Luciferdawns</h4>
-                        <p>Lorem Ipsum</p>
+                        <p>Coordonatrice Clients</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/elroc.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Elroc</h4>
-                        <p>Lorem Ipsum</p>
+                        <p>Modérateur</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i.imgur.com/8AaJjoo.jpeg" alt="Avatar" width="220">
+                    <img src="../assets/images/team/reyzo.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Pronicio</h4>
-                        <p>Lorem Ipsum</p>
+                        <h4>Reyzo</h4>
+                        <p>Modérateur</p>
                     </div>
                 </div>
             </div>
         </section>
         <div class="application reveal fade-left">
-            <h2>Notre <b>super équipe</b></h2>
-            <p>Vexa Studio possède une équipe dévouée, sérieuse<br>
-                et profesionnelle qui a pour but votre satisfaction.</p>
-            <button>Nous Joindre</button>
+            <h2>Soumettre <b>sa candidature</b></h2>
+            <p>Nous sommes toujours à la recherche de gens passionnés<br>
+                et talentueux. Nous sommes impatients de vous rencontrer!</p>
+            <button onclick="window.location.href='/contact';">Nous joindre</button>
         </div>
     </main>
 </template>
