@@ -23,22 +23,19 @@ export default async function (request) {
             parse: [ 'users', 'roles' ],
         },
         embeds: [ {
-            color: 455804,
             author: {
-                name: `${reqBody.username} ${reqBody.surname}`,
-                url: `https://vexastudio.com`,
+                name: `${reqBody.username} - ${reqBody.surname}`,
+                url: `https://www.google.com/search?q=${reqBody.username.replace(/ /, '')}`,
                 icon_url: userAvatar,
             },
-            title: `Nouveau Message`,
-            description: `<:info:1059983684855414784>・Objet : ${reqBody.object} \n<:text:1064002116986867772>・Message : ${reqBody.message}`,
+            description: `**Objet** : ${reqBody.object} \n**Message :** ${reqBody.message}`,
             fields: [
                 {
-                    name: '<:contact:1059131491646459985>・Email :',
+                    name: ':e_mail: Email :',
                     value: reqBody.email,
                 }
             ],
-            timestamp: new Date().toISOString(),
-            footer: `©️ Vexa Studio 2023. - Tous droits réservés.`
+            timestamp: new Date().toISOString()
         } ],
     }
 

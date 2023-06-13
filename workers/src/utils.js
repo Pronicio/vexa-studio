@@ -1,4 +1,4 @@
-const WEBHOOK = "https://discord.com/api/webhooks/1104519939521523813/zKNhn2TDxxAtpEXJ3iyT60F08GVAkvEOLX_2YWYZ_UJ3sLd9J-PhNH7lxEJBc7FkT_jZ"
+const WEBHOOK = "https://discord.com/api/webhooks/1103635163101012049/Hx6zH8bbn4xk4szrCkGgwUmzfFBeCqggAtQypbcI82RzmS7bfdHuV_z865XgN0c64LhY"
 
 export async function readRequestBody(request) {
     const contentType = request.headers.get("content-type");
