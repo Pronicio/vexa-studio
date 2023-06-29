@@ -52,8 +52,6 @@
 </style>
 
 <script setup>
-const runtimeConfig = useRuntimeConfig()
-
 const name = ref();
 const surname = ref();
 const email = ref();
@@ -71,7 +69,7 @@ async function sendMessage() {
     formData.append('message', message.value);
 
     try {
-        const res = await fetch(`${runtimeConfig.workersURL}/form`, {
+        const res = await fetch(`https://vexa-workers.pronicio.workers.dev/form`, {
             body: formData,
             mode: 'cors',
             method: "POST"
