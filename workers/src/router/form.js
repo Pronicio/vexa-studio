@@ -23,6 +23,7 @@ export default async function (request) {
             parse: [ 'users', 'roles' ],
         },
         embeds: [ {
+            color: 455804,
             author: {
                 name: `${reqBody.username} - ${reqBody.surname}`,
                 url: `https://www.google.com/search?q=${reqBody.username.replace(/ /, '')}`,
