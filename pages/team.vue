@@ -2,7 +2,7 @@
     <main>
         <div class="title reveal fade-left">
             <h1>Notre <b>super équipe</b></h1>
-            <p>Vexa Studio possède une équipe dévouée, sérieuse<br>
+            <p>Vexa Studio possède une équipe dévouée, sérieuse<br class="responsive">
                 et profesionnelle qui a pour but votre satisfaction.</p>
         </div>
         <section>
@@ -11,14 +11,14 @@
                 <div class="card">
                     <img src="../assets/images/team/artix.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Artix</h4>
+                        <h4>Maxime</h4>
                         <p>Directeur</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/team/tom.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Tom</h4>
+                        <h4>Thomas</h4>
                         <p>Directeur Adjoint</p>
                     </div>
                 </div>
@@ -37,14 +37,14 @@
                 <div class="card">
                     <img src="../assets/images/team/superangers.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Superanger</h4>
+                        <h4>Théophile</h4>
                         <p>Modeleur 3D</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/team/pronicio.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Pronicio</h4>
+                        <h4>Paolo</h4>
                         <p>Développeur</p>
                     </div>
                 </div>
@@ -56,29 +56,22 @@
                 <div class="card">
                     <img src="../assets/images/team/luciferdawns.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Luciferdawns</h4>
+                        <h4>Luna</h4>
                         <p>Coordonatrice Clients</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../assets/images/team/elroc.png" draggable="false" alt="Avatar" width="220">
-                    <div class="user">
-                        <h4>Elroc</h4>
-                        <p>Modérateur</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/team/reyzo.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
-                        <h4>Reyzo</h4>
-                        <p>Modérateur</p>
+                        <h4>Antoine</h4>
+                        <p>Community Manager</p>
                     </div>
                 </div>
             </div>
         </section>
         <div class="application reveal fade-left">
             <h2>Soumettre <b>sa candidature</b></h2>
-            <p>Nous sommes toujours à la recherche de gens passionnés<br>
+            <p>Nous sommes toujours à la recherche de gens passionnés<br class="responsive">
                 et talentueux. Nous sommes impatients de vous rencontrer!</p>
             <button onclick="window.location.href='/contact';">Nous joindre</button>
         </div>

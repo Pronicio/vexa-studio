@@ -32,9 +32,9 @@
                 <h3>Vexa Studio</h3>
             </div>
             <p>
-                Vexa Studio est un studio de conception<br>
-                web & graphique visant à créer et développer<br>
-                l'image visuelle projetée par nos clients<br>
+                Vexa Studio est un studio de conception<br class="responsive">
+                web & graphique visant à créer et développer<br class="responsive">
+                l'image visuelle projetée par nos clients<br class="responsive">
                 partout sur le web.
             </p>
         </div>

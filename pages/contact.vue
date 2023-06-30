@@ -2,8 +2,9 @@
     <main>
         <div class="title reveal">
             <h1>Entrer <b>en contact</b></h1>
-            <p>Une question, une requête, un problème? Remplissez le formulaire<br>
-                ci-dessous pour être mis en relation avec notre équipe</p>
+            <p>Vous désirez commander ou tout simplement nous contacter?<br class="responsive">
+                Remplissez le formulaire ci-dessous pour être mis en<br class="responsive">
+                relation avec notre équipe support.</p>
         </div>
         <form @:submit.prevent="sendMessage">
             <div class="row">

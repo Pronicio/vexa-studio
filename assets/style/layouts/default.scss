@@ -83,7 +83,16 @@ header {
   }
 }
 
-footer {
+footer { 
+  br.responsive {
+    display: inline; // Show BR tag for narrow screens
+  }
+  
+  @media (min-width: 100px) and (max-width: 800px) { // or whatever you are after
+    br.responsive {
+      display: none; // Hide BR tag for wider screens
+    }
+  }
   display: flex;
   flex-direction: row;
   justify-content: space-between;
