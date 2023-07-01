@@ -3,7 +3,7 @@
         <div class="title reveal fade-left">
             <h1>Notre <b>super équipe</b></h1>
             <p>Vexa Studio possède une équipe dévouée, sérieuse<br class="responsive">
-                et profesionnelle qui a pour but votre satisfaction.</p>
+                et professionnelle qui a pour but votre satisfaction.</p>
         </div>
         <section>
             <h3 class="reveal fade-left">Pôle Direction</h3>
@@ -57,7 +57,7 @@
                     <img src="../assets/images/team/luciferdawns.png" draggable="false" alt="Avatar" width="220">
                     <div class="user">
                         <h4>Luna</h4>
-                        <p>Coordonatrice Clients</p>
+                        <p>Responsable</p>
                     </div>
                 </div>
                 <div class="card">
@@ -72,7 +72,7 @@
         <div class="application reveal fade-left">
             <h2>Soumettre <b>sa candidature</b></h2>
             <p>Nous sommes toujours à la recherche de gens passionnés<br class="responsive">
-                et talentueux. Nous sommes impatients de vous rencontrer!</p>
+                et talentueux. Notre équipe est impatiente de vous rencontrer!</p>
             <button onclick="window.location.href='/contact';">Nous joindre</button>
         </div>
     </main>

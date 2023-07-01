@@ -3,7 +3,7 @@
       <div class="title reveal fade-left">
           <h1>Nos <b>différents services</b></h1>
           <p>Chez Vexa Studio, nous offrons une gamme de services<br class="responsive">
-              attrayante pour leur excellent rapport qualité-prix.</p>
+              attrayants et ayant un excellent rapport qualité-prix.</p>
       </div>
       <div class="collection">
           <div class="card">
@@ -38,7 +38,7 @@
               <div class="reveal fade-left">
                   <h3>Développement Web</h3>
                   <p>Nos développeurs expérimentés dans plusieurs technologies<br class="responsive">
-                     du web seront idéals pour développer le site web de vos rêves.</p>
+                     du web pourront développer le site web de vos rêves.</p>
                   <button onclick="window.location.href='/contact';">Commander</button>
               </div>
           </div>
