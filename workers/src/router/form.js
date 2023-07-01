@@ -14,7 +14,7 @@ export default async function (request) {
     const good = testData(reqBody);
     if (!good) return new Response("Invalid Data", { status: 500 });
 
-    const userAvatar = `https://api.dicebear.com/6.x/micah/png?seed=${reqBody.username.replace(/ /, '')}`
+    const userAvatar = `https://media.discordapp.net/attachments/1055255734440435815/1124794303307321354/user-avatar.png?width=168&height=168`
 
     const body = {
         name: reqBody.username,
@@ -25,17 +25,17 @@ export default async function (request) {
         embeds: [ {
             color: 455804,
             author: {
-                name: `${reqBody.username} - ${reqBody.surname}`,
+                name: `${reqBody.username} ${reqBody.surname}`,
                 url: `https://www.google.com/search?q=${reqBody.username.replace(/ /, '')}`,
                 icon_url: userAvatar,
             },
-            description: `**Objet** : ${reqBody.object} \n**Message :** ${reqBody.message}`,
-            fields: [
+            description: `<:folder:1059178516295450774>・**Objet**\n${reqBody.object}\n<:contact:1059131491646459985>・**E-mail**\n${reqBody.email}\n\n<:text:1064002116986867772>・**Message**\n\`${reqBody.message}\``,
+           /* fields: [
                 {
                     name: ':e_mail: Email :',
                     value: reqBody.email,
                 }
-            ],
+            ], */
             timestamp: new Date().toISOString()
         } ],
     }
