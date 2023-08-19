@@ -3,7 +3,7 @@
         <div class="title reveal fade-left">
             <h1>Notre <b>super équipe</b></h1>
             <p>Vexa Studio possède une équipe dévouée, sérieuse<br class="responsive">
-               et professionnelle qui a pour but votre satisfaction.</p>
+                et professionnelle qui a pour but votre satisfaction.</p>
         </div>
         <section>
             <h3 class="reveal fade-left">Pôle Direction</h3>
@@ -13,7 +13,6 @@
                     <div class="user">
                         <h4>Maxime</h4>
                         <p>Directeur</p>
-                        <a href="mailto:maxime@vexastudio.com">maxime@vexastudio.com</a>
                     </div>
                 </div>
                 <div class="card">
@@ -21,7 +20,6 @@
                     <div class="user">
                         <h4>Thomas</h4>
                         <p>Directeur Adjoint</p>
-                        <a href="mailto:thomas@vexastudio.com">thomas@vexastudio.com</a>
                     </div>
                 </div>
             </div>

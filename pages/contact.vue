@@ -93,24 +93,15 @@ function toast(success) {
     const toast = document.querySelector(".toast");
     const progress = document.querySelector(".progress");
 
-
-
-
     if (!success) {
-        toast.classList.remove("error");
-        document.querySelector(".text-1").innerText = "Succès !"
-        document.querySelector(".text-2").innerText = "Votre message a bien été envoyé."
-        email.value = ''
-        name.value = ''
-        surname.value = ''
-        object.value = ''
-        message.value = ''
-    } else if (toast.classList.contains('error')) {
         toast.classList.add("error");
         document.querySelector(".text-1").innerText = "Erreur !"
         document.querySelector(".text-2").innerText = "Veuillez vérifier que le formulaire est\n correctement rempli."
+    } else if (toast.classList.contains('error')) {
+        toast.classList.remove("error");
+        document.querySelector(".text-1").innerText = "Succès !"
+        document.querySelector(".text-2").innerText = "Votre message a bien été envoyé."
     }
-
 
     toast.classList.add("active");
     progress.classList.add("active");
