@@ -2,7 +2,7 @@
     <main>
         <section id="home">
             <div class="title reveal fade-left">
-                <button>10% de rabais avec WEBSITE10</button>
+                <button>Innover, un pixel à la fois.</button>
                 <h1>Nous Concevons Votre <b>Identité Graphique</b></h1>
                 <p>Vexa Studio est un studio de conception web & graphique<br class="responsive">
                     visant à créer et développer l'image visuelle projetée par nos<br class="responsive">
@@ -43,7 +43,7 @@
                     </p>
                 </div>
             </div>
-            <button onclick="window.location.href='/contact';" class="reveal fade-left">Commander maintenant</button>
+            <button onclick="window.location.href='/contact';">Commander maintenant</button>
         </section>
         <section id="reviews">
             <div class="title reveal fade-left">
@@ -118,7 +118,7 @@
                 <p>Nos créations sont uniques et de qualité. Voyez ci-dessous<br class="responsive">
                    ce que nous avons conçu récemment pour nos clients.
                 </p>
-                <button onclick="window.location.href='https://behance.net/vexastudio';">Notre portfolio</button>
+                <button target="blank" onclick="window.location.href='https://behance.net/vexastudio';">Notre portfolio</button>
             </div>
             <!-- <div class="collection reveal fade-right">
                 <div class="card">
