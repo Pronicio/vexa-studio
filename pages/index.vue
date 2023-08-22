@@ -4,7 +4,7 @@
             <div class="title reveal fade-left">
                 <button>Innover, un pixel à la fois.</button>
                 <h1>Nous Concevons Votre <b>Identité Graphique</b></h1>
-                <p>Vexa Studio est un studio de design graphique et de développement web<br class="responsive">
+                <p>Vexa Studio est un studio de design graphique & développement<br class="responsive">
                     visant à créer et développer l'image numérique projetée par nos<br class="responsive">
                     clients partout sur le web.</p>
             </div>
