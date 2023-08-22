@@ -4,8 +4,8 @@
             <div class="title reveal fade-left">
                 <button>Innover, un pixel à la fois.</button>
                 <h1>Nous Concevons Votre <b>Identité Graphique</b></h1>
-                <p>Vexa Studio est un studio de conception web & graphique<br class="responsive">
-                    visant à créer et développer l'image visuelle projetée par nos<br class="responsive">
+                <p>Vexa Studio est un studio de design graphique et de développement web<br class="responsive">
+                    visant à créer et développer l'image numérique projetée par nos<br class="responsive">
                     clients partout sur le web.</p>
             </div>
             <img src="../assets/images/palette.png" draggable="false" alt="Palette" class="reveal fade-right">
@@ -14,7 +14,7 @@
             <div class="title reveal fade-left">
                 <h2>Nous <b>sommes idéals</b></h2>
                 <p>Voici pourquoi nous sommes un bon choix pour la <br class="responsive">
-                    conception de vos idéees, aussi ambitieuse soit-elle.
+                    conception de vos idéees, aussi ambitieuse soient-elles.
                 </p>
             </div>
             <div class="collection reveal fade-right">
@@ -55,7 +55,7 @@
             <div class="collection reveal fade-right">
                 <div class="review">
                     <img src="../assets/images/user-avatar.png" draggable="false" alt="User avatar" width="60">
-                    <h5>Russay</h5>
+                    <h5>Pierre A.</h5>
                     <p>« Reçu en temps et en heure, design<br class="responsive">
                         incroyable et résultat surprenant!<br class="responsive">
                         Je souhaite de tout coeur continuer<br class="responsive">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="review">
                     <img src="../assets/images/user-avatar.png" draggable="false" alt="User avatar" width="60">
-                    <h5>Belzerk</h5>
+                    <h5>Marianne C.</h5>
                     <p>« Logo e-sport incroyable fait par Vexa Studio,<br>
                         rapide, super sympa et arrangeant au niveau<br>
                         du prix selon le budget. Je recommande! »<br>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="review">
                     <img src="../assets/images/user-avatar.png" draggable="false" alt="User avatar" width="60">
-                    <h5>Elroc</h5>
+                    <h5>Christope P.</h5>
                     <p>« Charte graphique faite par Vexa Studio,<br>
                         travail super propre et rapide, je ne peux<br>
                         que recommander vivement à tous! »<br>
@@ -101,13 +101,13 @@
                 <div class="card">
                     <h5>5+</h5>
                     <p>Membres<br>
-                        Du staff
+                        De l'équipe
                     </p>
                 </div>
                 <div class="card">
-                    <h5>100+</h5>
-                    <p>Membres<br>
-                        Sur Discord
+                    <h5>150+</h5>
+                    <p>Followers sur<br>
+                        Nos réseaux
                     </p>
                 </div>
             </div>
