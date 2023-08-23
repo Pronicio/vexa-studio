@@ -1,4 +1,13 @@
 <template>
+    <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Vexa Studio est un studio de design graphique & développement
+visant à créer et développer l'image numérique projetée par nos
+clients partout sur le web.">
+  <meta name="keywords" content="Graphic design, graphisme, design, développement, agence web, vexa studio, vexastudio, Vexa, Studio, tutoriels de graphisme, pas cher">
+  <meta name="author" content="Vexa Studio inc.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
     <header>
         <NuxtLink to="/">
             <div class="brand">

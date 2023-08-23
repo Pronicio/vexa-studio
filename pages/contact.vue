@@ -1,4 +1,7 @@
 <template>
+        <head>
+  <title>Vexa Studio - Contact</title>
+</head>
     <main>
         <div class="title reveal">
             <h1>Entrer <b>en contact</b></h1>

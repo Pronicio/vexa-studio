@@ -1,4 +1,7 @@
 <template>
+        <head>
+  <title>Vexa Studio - Équipe</title>
+</head>
     <main>
         <div class="title reveal fade-left">
             <h1>Notre <b>super équipe</b></h1>

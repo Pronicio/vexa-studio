@@ -1,4 +1,7 @@
 <template>
+        <head>
+  <title>Vexa Studio - Services</title>
+</head>
   <main>
       <div class="title reveal fade-left">
           <h1>Nos <b>différents services</b></h1>

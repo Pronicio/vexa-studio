@@ -1,4 +1,7 @@
 <template>
+    <head>
+  <title>Vexa Studio - Accueil</title>
+</head>
     <main>
         <section id="home">
             <div class="title reveal fade-left">
